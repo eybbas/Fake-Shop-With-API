@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f6f6f6;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  .order-div{
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 50px;
+    border-radius: 10px;
+  }
+  .order-window-div{
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px auto;
+    background-color: #e7e7e7;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.247);
+  }
+  .order-products-card-div{
+    width: 95%;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.11);
+  }
+  .order-products-image-div{
+    min-width: 150px;
+    max-width: 250px;
+    height: 140px;
+  }
+  .order-products-image-img{
+    min-width: 60%;
+    max-width: 100%;
+    height: 100%;
+  }
+  .order-products-info-div{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .order-products-name-span{
+    height: 25px;
+    font-family: "Nunito", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+  }
+  .order-products-quantity-span{
+    height: 50px;
+    font-family: "Nunito", sans-serif;
+    font-size: 17px;
+    font-weight: 650;
+    display: flex;
+    align-items: center;
+  }
+  .order-products-price-span{
+    height: 50px;
+    font-family: "Nunito", sans-serif;
+    font-size: 17px;
+    font-weight: 650;
+    display: flex;
+    align-items: center;
+  }
+  .order-products-remove-button{
+    width: 250px;
+    height: 30px;
+    border: 2px solid rgb(54, 161, 248);
+    border-radius: 5px;
+    background-color: rgba(29, 136, 223, 0.178);
+    font-weight: 550;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    color: rgb(54, 161, 248);
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+  .order-button-div{
+    width: 60%;
+    height: 20%;
+    background-color: white;
+    margin: auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.212);
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .order-total-price-span{
+    height: 50px;
+    font-family: "Nunito", sans-serif;
+    font-size: 17px;
+    font-weight: 650;
+    display: flex;
+    align-items: center;
+  }
+  .order-button{
+    width: 250px;
+    height: 30px;
+    border: 2px solid rgb(54, 161, 248);
+    border-radius: 5px;
+    background-color: rgba(29, 136, 223, 0.178);
+    font-weight: 550;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    color: rgb(54, 161, 248);
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+  .order-name-info-div{
+    width: 95%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.212);
+    justify-content: space-evenly;
+  }
+  .order-name-title-div{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .order-name-title-span{
+    height: 50px;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    font-weight: 650;
+  }
+  .order-name-info-input-div{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .order-username-div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .order-username-label{
+    height: 50px;
+    font-family: "Nunito", sans-serif;
+    font-size: 17px;
+    font-weight: 650;
+  }
+  .order-username-input{
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    outline: 0;
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-synthesis: style;
+    background-color: rgb(231, 231, 231);
+  }
+  .order-email-div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .order-email-label{
+    height: 50px;
+    font-family: "Nunito", sans-serif;
+    font-size: 17px;
+    font-weight: 650;
+  }
+  .order-email-input{
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    outline: 0;
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-synthesis: style;
+    background-color: rgb(231, 231, 231);
+  }
+  .order-number-div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .order-number-label{
+    height: 50px;
+    font-family: "Nunito", sans-serif;
+    font-size: 17px;
+    font-weight: 650;
+  }
+  .order-number-input{
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    outline: 0;
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-synthesis: style;
+    background-color: rgb(231, 231, 231);
+  }
+  .order-adress-info-div{
+    width: 95%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.212);
+    justify-content: space-evenly;
+  }
+  .order-adress-title-div{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .order-adress-title-span{
+    height: 50px;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    font-weight: 650;
+  }
+  .order-adress-info-input-div{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .order-region-div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .order-region-label{
+    height: 50px;
+    font-family: "Nunito", sans-serif;
+    font-size: 17px;
+    font-weight: 650;
+  }
+  .order-region-select{
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    outline: 0;
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-synthesis: style;
+    background-color: rgb(231, 231, 231);
+  }
+  .order-city-div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .order-city-label{
+    height: 50px;
+    font-family: "Nunito", sans-serif;
+    font-size: 17px;
+    font-weight: 650;
+  }
+  .order-city-input{
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    outline: 0;
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-synthesis: style;
+    background-color: rgb(231, 231, 231);
+  }
+  .order-adress-div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .order-adress-label{
+    height: 50px;
+    font-family: "Nunito", sans-serif;
+    font-size: 17px;
+    font-weight: 650;
+  }
+  .order-adress-input{
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    outline: 0;
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-synthesis: style;
+    background-color: rgb(231, 231, 231);
+  }
+  .order-payment-div{
+    width: 95%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.212);
+    justify-content: space-evenly;
+  }
+  .order-payment-title-span{
+    height: 50px;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    font-weight: 650;
+  }
+  .order-payment-radio-div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .order-payment-online-div{
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .order-payment-online-label{
+    height: 50px;
+    font-family: "Nunito", sans-serif;
+    font-size: 17px;
+    font-weight: 650;
+    display: flex;
+    align-items: center;
+  }
+  .order-payment-cash-div{
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .order-payment-cash-label{
+    height: 50px;
+    font-family: "Nunito", sans-serif;
+    font-size: 17px;
+    font-weight: 650;
+    display: flex;
+    align-items: center;
+  }
