@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './Mainpage.css'
 import { observer } from 'mobx-react';
-import MobxMainpage from './MobxMainpage';
+import MobxStore from './MobxStore';
 
 const Mainpage = observer(() => {
 
@@ -11,7 +11,7 @@ const Mainpage = observer(() => {
     localStorage.setItem('cartList', []);
   }
   if(!localStorage.getItem('totalPrice')){
-    localStorage.setItem('totalPrice', 0);
+    localStorage.setItem('totalPrice', 0.00);
   }
   if(!localStorage.getItem('totalQuantity')){
     localStorage.setItem('totalQuantity', 0);
@@ -41,7 +41,7 @@ const Mainpage = observer(() => {
                   <div className='products-info-div'>
                     <Link to={`product/${product.id}`} className='products-name-span'>{product.title}</Link>
                     <span className='products-price-span'>${product.price}</span>
-                    <button className='products-add-to-bag-button' onClick={() => {MobxMainpage.addToBag(product)}}>Add to Bag</button>
+                    <button className='products-add-to-bag-button' onClick={() => {MobxStore.addToBag(product)}}>Add to Bag</button>
                   </div>
                 </div>
             )

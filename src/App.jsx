@@ -6,9 +6,8 @@ import { Productpage } from './pages/Productpage';
 import { Cartpage } from './pages/Cartpage';
 import { Checkout } from './pages/Checkout';
 import { OrderAccept } from './pages/OrderAccept';
-import MobxMainpage from './pages/MobxMainpage';
 import { observer } from 'mobx-react';
-import MobxCartpage from './pages/MobxCartpage';
+import MobxStore from './pages/MobxStore';
 
 const App = observer(() =>  {
   return (
@@ -20,7 +19,7 @@ const App = observer(() =>  {
         <div className='menu-cart-div'>
           <Link className='menu-link' to='/cart'>Cart</Link>
           <div className='menu-total-quantity-div'>
-            <span className='menu-total-quantity-label'>{localStorage.getItem('totalQuantity')}</span>
+            <span className='menu-total-quantity-label'>{MobxStore.totalQuantity}</span>
           </div>
         </div>
         <div>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
     padding: 0;
@@ -47,7 +47,7 @@
 .product-title-span{
     width: 100%;
     height: 65%;
-    font-family: "Nunito", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 20px;
     font-weight: 600;
     display: flex;
@@ -65,7 +65,7 @@
     color: rgb(71, 71, 71);
     font-weight: 600;
     border-radius: 5px;
-    font-family: "Nunito", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 .product-description-div{
     height: 45%;
@@ -81,14 +81,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Nunito", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 .product-description-span{
     height: 75%;
     font-size: 16px;
     text-align: justify;
     font-style: italic;
-    font-family: "Nunito", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 .product-price-div{
     width: 100%;
@@ -101,18 +101,17 @@
 .product-price-span{
     font-size: 30px;
     font-weight: 600;
-    font-family: "Nunito", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 .product-add-to-bag-btn{
   width: 300px;
   height: 40px;
-  border: 2px solid rgb(54, 161, 248);
   border-radius: 5px;
-  background-color: rgba(29, 136, 223, 0.178);
-  font-weight: 600;
-  font-size: 18px;
-  font-family: "Nunito", sans-serif;
-  color: rgb(54, 161, 248);
+  background-color: rgb(29, 136, 223);
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 550;
+  color: rgb(255, 255, 255);
   transition: all 0.5s ease;
   cursor: pointer;
 }

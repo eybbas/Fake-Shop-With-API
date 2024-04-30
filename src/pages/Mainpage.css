@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
     padding: 0;
@@ -16,8 +16,7 @@
   }
   
   code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
+    font-family: "Montserrat", sans-serif;
   }
   .shop-window-div{
     width: 80%;
@@ -57,8 +56,8 @@
     justify-content: space-evenly;
   }
   .products-name-span{
-    height: 25px;
-    font-family: "Nunito", sans-serif;
+    height: 23px;
+    font-family: "Montserrat", sans-serif;
     font-size: 17px;
     font-weight: 600;
     overflow: hidden;
@@ -71,7 +70,7 @@
   }
   .products-price-span{
     height: 50px;
-    font-family: "Nunito", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 17px;
     font-weight: 650;
     display: flex;
@@ -80,13 +79,12 @@
   .products-add-to-bag-button{
     width: 250px;
     height: 30px;
-    border: 2px solid rgb(54, 161, 248);
     border-radius: 5px;
-    background-color: rgba(29, 136, 223, 0.178);
-    font-weight: 550;
+    background-color: rgb(18, 129, 219);
     font-size: 16px;
-    font-family: "Nunito", sans-serif;
-    color: rgb(54, 161, 248);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 550;
+    color: rgb(255, 255, 255);
     transition: all 0.5s ease;
     cursor: pointer;
   }

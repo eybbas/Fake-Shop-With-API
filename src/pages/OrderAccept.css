@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 *{
     padding: 0;
@@ -16,8 +17,7 @@
   }
   
   code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
+    font-family: "Montserrat", sans-serif;
   }
   .order-accept-div{
     width: 25%;
@@ -37,7 +37,7 @@
   }
   .order-accept-span{
     height: 50px;
-    font-family: "Nunito", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 20px;
     font-weight: 650;
     z-index: 1;
@@ -45,13 +45,12 @@
   .order-accept-button{
     width: 250px;
     height: 35px;
-    border: 2px solid rgb(54, 161, 248);
     border-radius: 5px;
-    background-color: rgba(29, 136, 223, 0.178);
-    font-weight: 600;
+    background-color: rgb(29, 136, 223);
     font-size: 16px;
-    font-family: "Nunito", sans-serif;
-    color: rgb(54, 161, 248);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 550;
+    color: rgb(255, 255, 255);
     transition: all 0.5s ease;
     cursor: pointer;
   }
