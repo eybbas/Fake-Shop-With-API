@@ -3,7 +3,8 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './Mainpage.css'
 import { observer } from 'mobx-react';
-import MobxStore from './MobxStore';
+import addtobag from '../../img/addtobag.png'
+import MobxStore from './MobxStore'
 
 const Mainpage = observer(() => {
 
@@ -19,9 +20,8 @@ const Mainpage = observer(() => {
 
   const [productList, setProductList] = useState([]);
 
-
   useEffect(() => {
-    axios.get('https://fakestoreapi.com/products')
+    axios.get('https://api.escuelajs.co/api/v1/products')
     .then((res) => {
       setProductList(res.data);
     })
@@ -35,15 +35,19 @@ const Mainpage = observer(() => {
           {productList.map((product) => {
             return(
                 <div className='products-card-div'>
-                  <div className='products-image-div'>
-                    <img className='products-image-img' src={product.image}></img>
+                  <Link to={`/products/${product.id}`} className='link-to-product-page' >
+                    <div className='products-image-div'>
+                      <img className='products-image-img' src={product.images[0]}></img>
+                    </div>
+                    <div className='products-info-div'>
+                      <span className='products-name-span'>{product.title}</span>
+                    </div>
+                  </Link>
+                    <div className='add-to-bag-div'>
+                      <span className='products-price-span'>${product.price}</span>
+                      <button className='add-to-bag-btn' onClick={() => {MobxStore.addToBag(product)}}><img className='add-to-bag-img' src={addtobag} alt="" /></button>
+                    </div>
                   </div>
-                  <div className='products-info-div'>
-                    <Link to={`product/${product.id}`} className='products-name-span'>{product.title}</Link>
-                    <span className='products-price-span'>${product.price}</span>
-                    <button className='products-add-to-bag-button' onClick={() => {MobxStore.addToBag(product)}}>Add to Bag</button>
-                  </div>
-                </div>
             )
           })}  
         </div>
